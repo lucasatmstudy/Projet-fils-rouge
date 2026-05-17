@@ -1,9 +1,12 @@
-/* Elment général */
-
 /* Police */
 @font-face {
-    font-family: 'LexendEB';
+    font-family: 'LexendBold';
     src: url(./assets/police/Lexend/Lexend-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'LexendRegular';
+    src: url(./assets/police/Lexend/Lexend-Regular.ttf) format('truetype');
 }
 
 @font-face {
@@ -11,8 +14,42 @@
     src: url(./assets/police/ChironGoRoundTC/chiron-goround-tc-v4-latin-800.woff2) format('truetype');
 }
 
+@font-face {
+    font-family: 'MontserratBold';
+    src: url(./assets/police/Montserrat/Montserrat-Bold.otf) format('true');
+}
+
+@font-face {
+    font-family: 'MontserratRegular';
+    src: url(./assets/police/Montserrat/Montserrat-Regular.otf) format('true');
+}
+
+h1 {
+    font-family: 'LexendRegular';
+    font-size: clamp(1.3rem, 4vw, 3rem);
+}
+
+h2 {
+    font-family: 'MontserratBold';
+    font-size: clamp(1.3rem, 4vw, 2rem);
+}
+
+.titreVisite {
+    color: #9e5705;
+    text-decoration: none;
+    font-family: 'MontserratBold';
+    font-size: clamp(0.8rem, 4vw, 1rem);
+}
+
+p {
+    font-family: 'LexendRegular';
+    font-size: clamp(1rem, 4vw, 1.3rem);
+}
+
+/* Elément général */
 body {
     background-color: #f5f5f5;
+    color: #143963;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,9 +57,20 @@ body {
     margin: 0;
 }
 
-main {
-    max-width: 1400px;
-    margin-top: auto;
+/* HEADER */
+/* header sticky */
+Header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background-color: #f5f5f5;
+    transition: box-shadow 0.8s ease;
+}
+
+/* box shadow avec effet JavaScript pour ne pas avoir d'ombre en haut de page */
+Header.scrolled {
+    box-shadow: 0px 4px 4px 0px rgba(51, 51, 51, 0.4);
 }
 
 /* header navbar */
@@ -31,153 +79,236 @@ ul {
     display: grid;
     align-items: center;
     justify-items: center;
-    padding: 0vw 4vw;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 1fr;
+    padding: 0vw 0vw;
+    margin: 1vw 0vw;
+    grid-template-columns: repeat(9, minmax(0, 1fr));
+    grid-template-rows: 1fr 0.1fr;
 }
 
-/* Sticky header */
-Header {
-    position: sticky;
-    top: 0;
-    width: 100%;
+/* Animation navbar */
+.NavBarLogo:hover img {
+    animation: animeLogoVrille 1s infinite ease-in-out;
+}
+
+@keyframes animeLogoVrille {
+    0%  { transform: rotate(0deg); }
+    10% { transform: rotate(10deg); }
+    20% { transform: rotate(-10deg); }
+    30% { transform: rotate(8deg); }
+    40% { transform: rotate(-8deg); }
+    50% { transform: rotate(6deg); }
+    60% { transform: rotate(-6deg); }
+    70% { transform: rotate(4deg); }
+    80% { transform: rotate(-4deg); }
+    90% { transform: rotate(2deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.NavBarLogo img, .NavBarCompte img {
+    width: clamp(44px, 5vw, 66px);
     height: auto;
-    background-color: #f5f5f5;
-    box-shadow: 0px 4px 4px 0px rgba(51, 51, 51, 0.4);
+    object-fit: cover;
 }
 
-#elComptePicto {
-    display: none;
-}
-#elCompte {
-    display: inline;
-}
-
-#logoImage {
-grid-row: 1;
-grid-column: 1;
+#logoImage, .NavBarLogo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
 }
 
-#logotext {
-background-color: lightblue;
-grid-row: 1;
-grid-column: 2/span 3;
-}
-
-#elAccueil {
-grid-row: 1;
-grid-column: 5;
-}
-
-#elCreer {
-grid-row: 1;
-grid-column: 6;
-}
-
-#elAlbum {
-grid-row: 1;
-grid-column: 7;
-}
-
-#elExplorer {
-grid-row: 1;
-grid-column: 8;
-}
-
-#elAmis {
-grid-row: 1;
-grid-column: 9;
-}
-
-#elCompte {
-grid-row: 1;
-grid-column: 10;
-}
-
-.NavBar {
+.NavBarText {
     color: #9e5705;
     text-decoration: none;
     font-family: 'Chiron-goround-tc800';
-    font-size: clamp(20px, 2em, 24px);
-    border-radius: 50px;
-    padding: 16px 24px;
-    transition-duration: 0.5s;
-    transition-timing-function: ease;
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    transition: transform 0.3s ease;
+    display: inline-block;
 }
+
+.NavBarText:hover {
+    transform: scale(1.15);
+}
+/* clamp(2rem, calc(2rem + (5 - 2) * ((100vw - 330px) / (1280 - 330))), 5rem); */
+.NavBar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #9e5705;
+    text-decoration: none;
+    font-family: 'Chiron-goround-tc800';
+    font-size: clamp(1.25rem, 3vw, 2rem);
+    border-radius: 40px;
+    padding: 8px 24px;
+    transition: 0.5s ease;
+    display: flex;
+}
+
+/* .NavBar {
+    color: #9e5705;
+    text-decoration: none;
+    font-family: 'Chiron-goround-tc800';
+    font-size: clamp(16px, calc(16px + (30 - 16 ) * ((100vw - 330px) / (1920 - 330))), 30px);;
+    width: clamp(90px, calc(90px + (150 - 90 ) * ((100vw - 330px) / (1920 - 330))), 150px);
+    height: 50px;
+    border-radius: 40px;
+    transition: 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
 
 .NavBar:hover {
     background-color: #9e5705;
     color: #F5F5F5;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
-/* .NavBarLogo {
-    transition-duration: 0.5s;
-    transition-timing-function: ease;
-}
-
-.NavBarLogo:hover {
-    animation: rotationlogo 0.3s infinite;
-}
-
-@keyframes rotationlogo {
-0% {
-transform: rotate (0deg);
-}
-50% {
-transform: rotate (90deg);
-}
-100% {
-transform: rotate (240deg);;
-}
+/* #underlineNav {
+    width: 90px;
+    height: 2px;
+    border: 4px solid #9e5705;
+    border-radius: 8px;
+    grid-row: 2;
+    grid-column: 4;
+    pointer-events: none;
 } */
 
+/* #elAccueil:hover ~ #underlineNav {
+    opacity: 0;
+} */
 
-/* Responsive */
-
-@media (max-width: 1280px) {
-    header {
-        background-color: rgb(37, 189, 17);
-    }
-
-    #logotext {
-        display:none;
-    }
-
-    ul {
-        grid-template-columns: repeat(7, 1fr);
-    }
-    #elAccueil {
-    grid-row: 1;
-    grid-column: 2;
-    }
-
-    #elCreer {
-    grid-row: 1;
-    grid-column: 3;
-    }
-
-    #elAlbum {
-    grid-row: 1;
-    grid-column: 4;
-    }
-
-    #elExplorer {
-    grid-row: 1;
-    grid-column: 5;
-    }
-
-    #elAmis {
-    grid-row: 1;
-    grid-column: 6;
-    }
-
-    #elCompte {
-    grid-row: 1;
-    grid-column: 7;
-    }
+/* Placement de élément de la navbar */
+#elComptePicto {
+    display: none;
 }
 
+/* #elCompte {
+    display: inline;
+} */
+
+#logoImage {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#logotext {
+    grid-row: 1;
+    grid-column: 2/span 2;
+}
+
+#elAccueil {
+    grid-row: 1;
+    grid-column: 4;
+}
+
+#elCreer {
+    grid-row: 1;
+    grid-column: 5;
+}
+
+#elAlbum {
+    grid-row: 1;
+    grid-column: 6;
+}
+
+#elExplorer {
+    grid-row: 1;
+    grid-column: 7;
+}
+
+#elAmis {
+    grid-row: 1;
+    grid-column: 8;
+}
+
+#elCompte {
+    grid-row: 1;
+    grid-column: 9;
+}
+
+.bouton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bouton span {
+    display: flex;
+    gap: 6vw;
+}
+
+.bouton span a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'LexendBold';
+    font-size: clamp(16px, 1.5em, 20px);
+    color: #F5F5F5;
+    background-color: #9e5705;
+    border: 4px solid #9e5705;
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    transition: 1.5s ease;
+}
+
+.bouton span a:hover {
+    color: #9e5705;
+    background-color: #F5F5F5;
+    border: 4px solid #9e5705;
+}
+
+/* Premier section */
+.titreAccueil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Section à la une */
+.chapitre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chapitreFond {
+    background-color: #ffffff;
+    width: clamp(330px, 100%, 1280px);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chapitreTitre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#aLaUneMembre {
+    display: flex;
+    flex-direction: row;
+    gap: 6vw;
+}
+
+#aLaUneMembre img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+/* Responsive */
 @media (max-width: 1280px) {
     header {
         background-color: rgb(37, 189, 17);
@@ -191,33 +322,36 @@ transform: rotate (240deg);;
         grid-template-columns: repeat(7, 1fr);
     }
     #elAccueil {
-    grid-row: 1;
-    grid-column: 2;
+        grid-row: 1;
+        grid-column: 2;
     }
 
     #elCreer {
-    grid-row: 1;
-    grid-column: 3;
+        grid-row: 1;
+        grid-column: 3;
     }
 
     #elAlbum {
-    grid-row: 1;
-    grid-column: 4;
+        grid-row: 1;
+        grid-column: 4;
     }
 
     #elExplorer {
-    grid-row: 1;
-    grid-column: 5;
+        grid-row: 1;
+        grid-column: 5;
     }
 
     #elAmis {
-    grid-row: 1;
-    grid-column: 6;
+        grid-row: 1;
+        grid-column: 6;
     }
 
     #elCompte {
-    grid-row: 1;
-    grid-column: 7;
+        grid-row: 1;
+        grid-column: 7;
+    }
+    .chapitreFond {
+        border-radius: 0px;
     }
 }
 
@@ -231,65 +365,67 @@ transform: rotate (240deg);;
     }
 
     ul {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(6, minmax(0, 1fr));
     }
 
     #elCreer {
-    grid-row: 1;
-    grid-column: 2;
+        grid-row: 1;
+        grid-column: 2;
     }
 
     #elAlbum {
-    grid-row: 1;
-    grid-column: 3;
+        grid-row: 1;
+        grid-column: 3;
     }
 
     #elExplorer {
-    grid-row: 1;
-    grid-column: 4;
+        grid-row: 1;
+        grid-column: 4;
     }
 
     #elAmis {
-    grid-row: 1;
-    grid-column: 5;
+        grid-row: 1;
+        grid-column: 5;
     }
 
     #elCompte {
-    grid-row: 1;
-    grid-column: 6;
+        grid-row: 1;
+        grid-column: 6;
     }
 }
 
 @media (max-width: 768px) {
     header {
-        background-color: rgb(177, 26, 26);
+        background-color: rgb(209, 104, 104);
     }
 
     ul {
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-rows: 1fr 0.1fr;
+    }
+
+    #elCompte {
+        display: none;
     }
 
     #elComptePicto {
-    display: inline;
+        display: inline;
     }
-    #elCompte {
-    display: none;
-    }
+    
 
     #elCreer {
-    grid-row: 2;
-    grid-column: 1;
+        grid-row: 2;
+        grid-column: 1;
     }
 
     #elAlbum {
-    grid-row: 2;
-    grid-column: 2;
+        grid-row: 2;
+        grid-column: 2;
     }
 
     #elExplorer {
-    grid-row: 2;
-    grid-column: 3;
+        grid-row: 2;
+        grid-column: 3;
     }
 
     #elAmis {
@@ -298,7 +434,7 @@ transform: rotate (240deg);;
     }
 
     #elComptePicto {
-    grid-row: 1;
-    grid-column: 4;
+        grid-row: 1;
+        grid-column: 4;
     }
 }
