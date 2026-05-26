@@ -30,15 +30,15 @@ h1 {
 }
 
 h2 {
-    font-family: 'MontserratBold';
-    font-size: clamp(1.3rem, 4vw, 2rem);
+    font-family: 'LexendBold';
+    font-size: clamp(1.2rem, 4vw, 2rem);
 }
 
 .titreVisite {
     color: #9e5705;
     text-decoration: none;
-    font-family: 'MontserratBold';
-    font-size: clamp(0.8rem, 4vw, 1rem);
+    font-family: 'LexendBold';
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
 }
 
 p {
@@ -55,6 +55,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
+    /* overflow-x: hidden; */
 }
 
 /* HEADER */
@@ -80,7 +81,7 @@ ul {
     align-items: center;
     justify-items: center;
     padding: 0vw 0vw;
-    margin: 1vw 0vw;
+    margin: 0vw 0vw;
     grid-template-columns: repeat(9, minmax(0, 1fr));
     grid-template-rows: 1fr 0.1fr;
 }
@@ -127,66 +128,34 @@ ul {
 }
 
 .NavBarText:hover {
-    transform: scale(1.15);
+    transform: scale(1.10);
 }
 /* clamp(2rem, calc(2rem + (5 - 2) * ((100vw - 330px) / (1280 - 330))), 5rem); */
 .NavBar {
     display: flex;
     justify-content: center;
     text-align: center;
+    text-align: center;
     color: #9e5705;
     text-decoration: none;
     font-family: 'Chiron-goround-tc800';
-    font-size: clamp(1.25rem, 3vw, 2rem);
+    font-size: clamp(1.25rem, 3vw, 1.8rem);
     border-radius: 40px;
-    padding: 8px 24px;
-    transition: 0.5s ease;
-    display: flex;
+    padding: 8px 20px;
+    transition: 0.5s linear;
 }
-
-/* .NavBar {
-    color: #9e5705;
-    text-decoration: none;
-    font-family: 'Chiron-goround-tc800';
-    font-size: clamp(16px, calc(16px + (30 - 16 ) * ((100vw - 330px) / (1920 - 330))), 30px);;
-    width: clamp(90px, calc(90px + (150 - 90 ) * ((100vw - 330px) / (1920 - 330))), 150px);
-    height: 50px;
-    border-radius: 40px;
-    transition: 0.5s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
 
 .NavBar:hover {
     background-color: #9e5705;
     color: #F5F5F5;
-    transform: scale(1.1);
+    /* transform: scale(1.05); */
+    box-shadow: 0px 4px 10px rgba(158, 87, 5, 0.4);
 }
-
-/* #underlineNav {
-    width: 90px;
-    height: 2px;
-    border: 4px solid #9e5705;
-    border-radius: 8px;
-    grid-row: 2;
-    grid-column: 4;
-    pointer-events: none;
-} */
-
-/* #elAccueil:hover ~ #underlineNav {
-    opacity: 0;
-} */
 
 /* Placement de élément de la navbar */
 #elComptePicto {
     display: none;
 }
-
-/* #elCompte {
-    display: inline;
-} */
 
 #logoImage {
     grid-row: 1;
@@ -228,6 +197,14 @@ ul {
     grid-column: 9;
 }
 
+/* Premier section */
+.titreAccueil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .bouton {
     display: flex;
     justify-content: center;
@@ -245,30 +222,21 @@ ul {
     justify-content: center;
     align-items: center;
     font-family: 'LexendBold';
-    font-size: clamp(16px, 1.5em, 20px);
+    font-size: clamp(1.10rem, 3vw, 1.5rem);
     color: #F5F5F5;
     background-color: #9e5705;
     border: 4px solid #9e5705;
-    font-size: 20px;
-    width: 150px;
-    height: 50px;
-    border-radius: 25px;
-    transition: 1.5s ease;
+    width: clamp(100px, calc(100px + (150 - 100) * ((100vw - 330px) / (1280 - 330))), 150px);
+    height: clamp(33px, calc(33px + (50 - 33) * ((100vw - 330px) / (1280 - 330))), 50px);
+    border-radius: 30px;
+    transition: 0.5s linear;
 }
 
 .bouton span a:hover {
     color: #9e5705;
     background-color: #F5F5F5;
     border: 4px solid #9e5705;
-}
-
-/* Premier section */
-.titreAccueil {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+    box-shadow: 0px 4px 10px rgba(158, 87, 5, 0.4);
 }
 
 /* Section à la une */
@@ -280,6 +248,7 @@ ul {
 }
 
 .chapitreFond {
+    box-sizing: border-box;
     background-color: #ffffff;
     width: clamp(330px, 100%, 1280px);
     border-radius: 8px;
@@ -287,27 +256,37 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 1.4vw;
 }
 
 .chapitreTitre {
+    align-self: stretch;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
+    align-items: baseline;
 }
 
-#aLaUneMembre {
+.aLaUneMembre {
     display: flex;
     flex-direction: row;
     gap: 6vw;
 }
 
-#aLaUneMembre img {
+.aLaUneMembre img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     object-fit: cover;
 }
+
+.avatarUtilisateur {
+    border: #143963 solid 2px;
+    width: clamp(35px, 5vw, 60px);
+    height: clamp(35px, 5vw, 60px);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 /* Responsive */
 @media (max-width: 1280px) {
     header {
