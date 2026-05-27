@@ -12,3 +12,23 @@ document.querySelectorAll('*').forEach(el => {
         console.log(el);
     }
 });
+
+const burger = document.querySelector('#logoBurger');
+const navBurger = document.querySelector('.navigationBurger');
+const fermer = document.querySelector('#elFermer');
+const fermerClick = document.querySelector('body')
+
+// Ouvrir et fermer le burger
+burger.addEventListener('click', () => {
+    navBurger.classList.add('open');
+});
+
+fermer.addEventListener('click', () => {
+    navBurger.classList.remove('open');
+});
+
+document.addEventListener('click', (leclick) => {
+    if (!navBurger.contains(leclick.target) && !burger.contains(leclick.target))  {
+    navBurger.classList.remove('open');
+    }
+});

@@ -8,8 +8,8 @@
 </head>
 <body>
     <header>
-        <nav class=sticky-header aria-label="navigation principale">
-            <ul>
+        <nav class="sticky-header" aria-label="navigation principale">
+            <ul class="navigationPrincipale">
                 <li id="logoImage"><a class="NavBarLogo" href="./index.html"><img id="logo" src="./assets/pico-logo-wim/Logo.svg" alt="Logo"></a></li>
                 <li id="logotext"><a class="NavBarText" href="/index.html">WORLD IS MINE</a></li>
                 <li id="elAccueil"><a class="NavBar" href="/index.html">Accueil</a></li>
@@ -18,8 +18,20 @@
                 <li id="elExplorer"><a class="NavBar" href="A definir">Amis</a></li>
                 <li id="elAmis"><a class="NavBar" href="A definir">Explorer</a></li>
                 <li id="elCompte"><a class="NavBar" href="A definir">Compte</a></li>
-                <li id="logoBurger"><a class="NavBarBurger" href="A definir"><img id="imageBurger" src="./assets/pico-logo-wim/burgerV1.svg" alt="Menu burger"></a></li>
+                <!-- <li id="logoBurger"><a class="NavBarBurger" href="./index.html"><img id="imageBurger" src="./assets/pico-logo-wim/burgerV1.svg" alt="Menu burger"></a></li> -->
+                <li id="logoBurger"><button id="NavBarBurger" class="burger" aria-label="Ouvrir le menu burger" aria-expanded="false"><img id="imageBurger" src="./assets/pico-logo-wim/burgerV1.svg" alt="Menu burger"></button></li>
                 <div id="underlineNav"></div>
+            </ul>
+        </nav>
+        <nav class="sticky-burger" aria-label="navigation burger">
+            <ul class="navigationBurger">
+                <li id="elFermer"><img src="./assets/pico-logo-wim/croixLarge.svg" alt="Fermeture menu burger"></li>
+                <li id="elAccueilBurger"><a class="NavBurger" href="/index.html">Accueil</a></li>
+                <li id="elCreerBurger"><a class="NavBurger" href="A definir">Créer</a></li>
+                <li id="elAlbumBurger"><a class="NavBurger" href="A definir">Album</a></li>
+                <li id="elExplorerBurger"><a class="NavBurger" href="A definir">Amis</a></li>
+                <li id="elAmisBurger"><a class="NavBurger" href="A definir">Explorer</a></li>
+                <li id="elCompteBurger"><a class="NavBurger" href="A definir">Compte</a></li>
             </ul>
         </nav>
     </header>
@@ -36,7 +48,7 @@
             <p> Grâce à WIM, créez, stockez et partagez les albums photo de vos plus beaux moments.</p>
         </section>
         <section class="bouton">
-            <span><a href="A definir">Créer</a><a href="A definir">Explorer</a></span>
+            <span><a href="A definir" aria-label="Créer un Album">Créer</a><a href="A definir" aria-label="Explorer les albums">Explorer</a></span>
         </section>
         <section class="chapitre">
             <div class="chapitreFond">
@@ -51,7 +63,7 @@
                         <!-- <p class="dateAlbum">16/03/26</p> -->
                     </span>
                     <span >
-                        <img class="albumUtilisateur" src="assets/fakeAlbum/fakePhoto/108054341-1730220231125-gettyimages.jpg" alt="photoAlbum">
+                        <a href="aDefinir"><img class="albumUtilisateur" src="assets/fakeAlbum/fakePhoto/108054341-1730220231125-gettyimages.jpg" alt="photoAlbum"></a>
                     </span>
             </div>
             </div>                

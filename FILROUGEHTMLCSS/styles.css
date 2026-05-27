@@ -85,7 +85,7 @@ header.scrolled {
 }
 
 /* header navbar */
-ul {
+.navigationPrincipale {
     list-style: none;
     display: grid;
     align-items: center;
@@ -132,20 +132,6 @@ ul {
     object-fit: cover;
 }
 
-.NavBarBurger {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.NavBarBurger img {
-    width: 28px;
-    height: auto;
-    object-fit: cover;
-
-}
-
 .NavBarText {
     color: #9e5705;
     text-decoration: none;
@@ -177,6 +163,92 @@ ul {
     color: #F5F5F5;
     transform: scale(1.10);
     box-shadow: 0px 4px 10px rgba(158, 87, 5, 0.4);
+}
+
+/* .navigationBurger {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: #f5f5f5;
+    z-index: 200;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 0;
+    margin: 0;
+} */
+
+/* État par défaut — caché */
+.navigationBurger {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    list-style-type: none;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #f5f5f5;
+    z-index: 200;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* État ouvert */
+.navigationBurger.open {
+    transform: translateX(0);
+}
+
+.NavBurger {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#NavBarBurger {
+    background: none;
+    border: none;
+}
+
+#NavBarBurger img {
+    width: 32px;
+    height: auto;
+}
+
+#elFermer {
+    display: flex;
+    grid-column: 4;
+    justify-self: start;
+    align-self: end;
+}
+
+#elFermer img {
+    width: 20px;
+}
+
+.NavBurger {
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    max-height: 800px;
+    justify-content: center;
+    text-align: start;
+    color: #9e5705;
+    text-decoration: none;
+    font-family: 'Chiron-goround-tc800';
+    font-size: clamp(1.25rem, 3vw, 1.8rem);
+    border-radius: 40px;
+    padding: 8px 16px;
 }
 
 /* Placement de élément de la navbar */
@@ -291,7 +363,7 @@ ul {
     transition: transform 0.3s linear;
 }
 
-.titreVisite:after {
+.titreVisite::after {
     content: '';
     position: absolute;
     bottom: 4px;
@@ -351,7 +423,7 @@ ul {
         display:none;
     }
 
-    ul {
+    .navigationPrincipale {
         grid-template-columns: repeat(7, 1fr);
     }
     #elAccueil {
@@ -392,7 +464,7 @@ ul {
     }
 
 
-    ul {
+    .navigationPrincipale {
         grid-template-columns: repeat(6, minmax(0, 1fr));
     }
 
@@ -430,7 +502,7 @@ ul {
         font-size: clamp(18px, 5vw, 24px);
     }
 
-    ul {
+    .navigationPrincipale {
         grid-template-columns: repeat(4, minmax(0, 1fr));
         grid-template-rows: 1fr;
     }
