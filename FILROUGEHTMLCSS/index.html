@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <nav class="sticky-header" aria-label="navigation principale">
+        <nav aria-label="navigation principale">
             <ul class="navigationPrincipale">
                 <li id="logoImage"><a class="NavBarLogo" href="./index.html"><img id="logo" src="./assets/pico-logo-wim/Logo.svg" alt="Logo"></a></li>
                 <li id="logotext"><a class="NavBarText" href="/index.html">WORLD IS MINE</a></li>
@@ -18,12 +18,11 @@
                 <li id="elExplorer"><a class="NavBar" href="A definir">Amis</a></li>
                 <li id="elAmis"><a class="NavBar" href="A definir">Explorer</a></li>
                 <li id="elCompte"><a class="NavBar" href="A definir">Compte</a></li>
-                <!-- <li id="logoBurger"><a class="NavBarBurger" href="./index.html"><img id="imageBurger" src="./assets/pico-logo-wim/burgerV1.svg" alt="Menu burger"></a></li> -->
                 <li id="logoBurger"><button id="NavBarBurger" class="burger" aria-label="Ouvrir le menu burger" aria-expanded="false"><img id="imageBurger" src="./assets/pico-logo-wim/burgerV1.svg" alt="Menu burger"></button></li>
                 <div id="underlineNav"></div>
             </ul>
         </nav>
-        <nav class="sticky-burger" aria-label="navigation burger">
+        <nav aria-label="navigation burger">
             <ul class="navigationBurger">
                 <li id="elFermer"><img src="./assets/pico-logo-wim/croixLarge.svg" alt="Fermeture menu burger"></li>
                 <li id="elAccueilBurger"><a class="NavBurger" href="/index.html">Accueil</a></li>
@@ -62,11 +61,26 @@
                         <p class="nomAlbum">Merci pour le Kdo !!</p>
                         <!-- <p class="dateAlbum">16/03/26</p> -->
                     </span>
-                    <span >
+                    <div id="photoUne">
+                        <button id="boutonGauche"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M169.4 297.4C156.9 309.9 156.9 330.2 169.4 342.7L361.4 534.7C373.9 547.2 394.2 547.2 406.7 534.7C419.2 522.2 419.2 501.9 406.7 489.4L237.3 320L406.6 150.6C419.1 138.1 419.1 117.8 406.6 105.3C394.1 92.8 373.8 92.8 361.3 105.3L169.3 297.3z"/></svg></button>
                         <a href="aDefinir"><img class="albumUtilisateur" src="assets/fakeAlbum/fakePhoto/108054341-1730220231125-gettyimages.jpg" alt="photoAlbum"></a>
-                    </span>
+                        <button id="boutonDroit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z"/></svg></button>
+                    </div>
+            </div>              
+        </section>
+<!-- le carroussel https://codemalin.fr/articles/creer-un-carrousel-en-javascript.html -->
+        <section class="leCarousel">
+            <div class="carousel" aria-labelledby="carouselheading">
+                <button class="btn" id="prev">&#10096;</button>
+                <div class="carousel-track-container">
+                    <ul class="carousel-track">
+                        <li class="slide"><img src="./assets/fakeAlbum/fakePhoto/OIP-16893933.jpg" alt="Image 1"></li>
+                        <li class="slide"><img src="./assets/fakeAlbum/fakePhoto/866-536x354.jpg" alt="Image 2"></li>
+                        <li class="-slide"><img src="./assets/fakeAlbum/fakePhoto/beauty-woman-face-with-perfect-skin.jpg" alt="Image 3"></li>
+                    </ul>
+                </div>
+                <button class="btn" id="next">&#10097;</button>
             </div>
-            </div>                
         </section>
         <section>
             <h2>fezfzefz</h2>
