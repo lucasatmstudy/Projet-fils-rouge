@@ -1,0 +1,832 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "pseudo": "Victor",
+      "category": "friend",
+      "profile_picture": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=300&h=300&fit=crop",
+      "albums": [
+        {
+          "title": "Vacances à la plage",
+          "created_at": "12/07/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Randonnée en montagne",
+          "created_at": "24/08/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Sortie en ville",
+          "created_at": "05/10/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1449034446853-66c86144b0ad?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "pseudo": "Emma",
+      "category": "friend",
+      "profile_picture": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop",
+      "albums": [
+        {
+          "title": "Mon Chat",
+          "created_at": "14/02/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1533738363-b7f9aef128ce?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Recettes de Cuisine",
+          "created_at": "22/05/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1498837167922-ddd27525d352?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Session Escalade",
+          "created_at": "30/09/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1522163182402-834f871fd851?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1564769625905-50e93615e769?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1502126324834-38f8e02d7160?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "pseudo": "Thomas",
+      "category": "friend",
+      "profile_picture": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop",
+      "albums": [
+        {
+          "title": "Roadtrip Moto",
+          "created_at": "11/06/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Concert Rock",
+          "created_at": "18/07/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Soirée Jeux",
+          "created_at": "05/11/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1585504198199-20277593b94f?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1606167668584-78701c57f13d?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "pseudo": "Chloé",
+      "category": "friend",
+      "profile_picture": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop",
+      "albums": [
+        {
+          "title": "Aquarelle et Dessin",
+          "created_at": "03/03/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1580136579312-94651dfd596d?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Mon Potager",
+          "created_at": "19/06/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Halloween 2024",
+          "created_at": "31/10/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1508349682734-18104f9ad31a?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1572244109867-b5860a4f5f5f?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "pseudo": "Hugo",
+      "category": "friend",
+      "profile_picture": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop",
+      "albums": [
+        {
+          "title": "Session Skate",
+          "created_at": "12/04/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1520156473225-7acec493f7ef?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1547447134-cd3f5c716030?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1564982753-a4484de0f922?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Street Art",
+          "created_at": "08/07/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1499781350541-7783f6c6a0c8?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1536924940846-227afb31e2a5?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Paris sous la pluie",
+          "created_at": "14/11/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1481349518771-20055b2a7b24?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "pseudo": "Sarah",
+      "category": "friend",
+      "profile_picture": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=300&h=300&fit=crop",
+      "albums": [
+        {
+          "title": "Mon Chien",
+          "created_at": "01/05/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1552053831-71594a27632d?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Cafés Stylés",
+          "created_at": "19/08/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1507133750040-4a8f57021571?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Coucher de Soleil",
+          "created_at": "02/09/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1472214222541-d510753a8707?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "pseudo": "Maxime",
+      "category": "friend",
+      "profile_picture": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=300&h=300&fit=crop",
+      "albums": [
+        {
+          "title": "Setup Gaming",
+          "created_at": "10/01/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Festival de Musique",
+          "created_at": "22/07/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Street Food",
+          "created_at": "11/10/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "pseudo": "Manon",
+      "category": "friend",
+      "profile_picture": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300&h=300&fit=crop",
+      "albums": [
+        {
+          "title": "Plantes d'intérieur",
+          "created_at": "05/04/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1463936575829-25148e1db1b8?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1545241047-6083a3684587?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Visite de Musée",
+          "created_at": "14/09/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1545987796-200677ee1011?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Marché de Noël",
+          "created_at": "20/12/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1482862549707-f63cb32c5fd9?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "pseudo": "Antoine",
+      "category": "friend",
+      "profile_picture": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop",
+      "albums": [
+        {
+          "title": "Rénovation Voiture",
+          "created_at": "30/03/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "BBQ Été",
+          "created_at": "15/08/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Match de Foot",
+          "created_at": "12/10/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1518063319789-7217e6706b04?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1543351611-58f69d7c1781?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "pseudo": "Léa",
+      "category": "friend",
+      "profile_picture": "https://images.unsplash.com/photo-1491349174775-aaafddd81942?w=300&h=300&fit=crop",
+      "albums": [
+        {
+          "title": "Macarons Maison",
+          "created_at": "18/01/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1569864358642-9d1684040f43?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Balade en Forêt",
+          "created_at": "22/04/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1511497584788-876760111969?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Bibliothèque",
+          "created_at": "19/11/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1568667256549-094345857637?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "pseudo": "Nathan",
+      "category": "notFriend",
+      "profile_picture": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop",
+      "albums": [
+        {
+          "title": "Architecture",
+          "created_at": "05/02/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1449034446853-66c86144b0ad?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Voitures de Sport",
+          "created_at": "14/06/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1525609004556-c46c7d6cf0a3?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Voyage Tokyo",
+          "created_at": "09/10/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1540959733332-eab4deceeaf7?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "pseudo": "Inès",
+      "category": "notFriend",
+      "profile_picture": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&h=300&fit=crop",
+      "albums": [
+        {
+          "title": "Photos Floues",
+          "created_at": "22/03/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1509114397022-ed747cca3f65?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Maquillage Art",
+          "created_at": "11/07/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Baskets/Sneakers",
+          "created_at": "04/09/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "pseudo": "Louis",
+      "category": "notFriend",
+      "profile_picture": "https://images.unsplash.com/photo-1521119989659-a83eee488004?w=300&h=300&fit=crop",
+      "albums": [
+        {
+          "title": "Musculation",
+          "created_at": "12/02/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Compléments Alimentaires",
+          "created_at": "05/06/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1577401230592-0639dfb29aed?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1610970881699-44a5587cabec?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Piscine",
+          "created_at": "22/07/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1519449556851-5720b33024e7?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1530541930197-ff16ac917b0e?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "pseudo": "Clara",
+      "category": "notFriend",
+      "profile_picture": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=300&h=300&fit=crop",
+      "albums": [
+        {
+          "title": "Astrologie",
+          "created_at": "01/01/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1532960401447-7dd05bef20b0?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Bougies",
+          "created_at": "19/04/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1603006905003-be475563bc59?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1508349682734-18104f9ad31a?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Festival Electro",
+          "created_at": "28/08/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "pseudo": "Gabriel",
+      "category": "notFriend",
+      "profile_picture": "https://images.unsplash.com/photo-1504257404764-52525a411123?w=300&h=300&fit=crop",
+      "albums": [
+        {
+          "title": "Drone Nature",
+          "created_at": "15/05/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1508672019048-805c876b67e2?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Plongée",
+          "created_at": "20/07/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1682687220063-4742bd7fd538?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1546026423-cc4642628d2b?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Bassin Poissons",
+          "created_at": "02/09/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1535591273668-578e31182c4f?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1524704654690-b56c05c78a02?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "pseudo": "Alice",
+      "category": "notFriend",
+      "profile_picture": "https://images.unsplash.com/photo-1554151228-14d9def656e4?w=300&h=300&fit=crop",
+      "albums": [
+        {
+          "title": "Tricot",
+          "created_at": "11/01/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1584992231908-a90240d66572?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1608745851039-7cc1360098df?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1575844265431-77ffda73b22e?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Thé de l'après-midi",
+          "created_at": "14/05/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1563822249548-9a72b6353cd1?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Vieux Livres",
+          "created_at": "30/08/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "pseudo": "Arthur",
+      "category": "notFriend",
+      "profile_picture": "https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?w=300&h=300&fit=crop",
+      "albums": [
+        {
+          "title": "Jeux de Cartes",
+          "created_at": "12/03/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1601987177651-8edfe6c20009?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1606167668584-78701c57f13d?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Cocktails",
+          "created_at": "19/06/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1536935338788-846bb9981813?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Laser Game",
+          "created_at": "05/11/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1553481187-be93c21490a9?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "pseudo": "Lola",
+      "category": "notFriend",
+      "profile_picture": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=300&h=300&fit=crop",
+      "albums": [
+        {
+          "title": "Couture Moderne",
+          "created_at": "03/04/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1524295928322-4b934027558e?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Escapade à Rome",
+          "created_at": "12/09/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1529260830199-44554411d7ef?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1515542622106-78bda8ba0e5b?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Brunch Dimanche",
+          "created_at": "15/12/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1495214783159-3503fd1b572d?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "pseudo": "Enzo",
+      "category": "notFriend",
+      "profile_picture": "https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=300&h=300&fit=crop",
+      "albums": [
+        {
+          "title": "Bmx tricks",
+          "created_at": "14/05/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1507156431300-48027743358c?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1518604666860-9ed391f76460?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Casques Audio",
+          "created_at": "02/08/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Néon Vibes",
+          "created_at": "29/10/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?w=800&h=445&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?w=800&h=445&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "pseudo": "Jade",
+      "category": "notFriend",
+      "profile_picture": "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=300&h=300&fit=crop",
+      "albums": [
+        {
+          "title": "Desserts Licorne",
+          "created_at": "24/02/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1587314168485-3236d6710814?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Matcha Latte",
+          "created_at": "05/06/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1536256263959-770b48d82b0a?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1515694346937-94d85e41e6f0?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Ciel Étoilé",
+          "created_at": "11/08/2024",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "pseudo": "Moimoietmoi",
+      "category": "myself",
+      "profile_picture": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=300&h=300&fit=crop",
+      "albums": [
+        {
+          "title": "Irland", "created_at": "01/01/2025",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1472396961693-142e6e269027?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Zen", "created_at": "10/01/2025",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Route 66", "created_at": "20/01/2025",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "J'ai hâte", "created_at": "05/02/2025",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1433832597046-4f10e10ac764?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "test texte dpasse avec beaucoup de mot", "created_at": "15/02/2025",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Retour au source", "created_at": "01/03/2025",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1446329813274-7c9036bd9a1f?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1448375240586-882707db888b?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Camping", "created_at": "12/03/2025",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1511497584788-876760111969?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Le plus beau", "created_at": "25/03/2025",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1544568100-847a948585b9?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Rex", "created_at": "05/04/2025",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1552053831-71594a27632d?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Café", "created_at": "18/04/2025",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1507133750040-4a8f57021571?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Mon Album 11", "created_at": "01/05/2025",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1472214222541-d510753a8707?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Mon Album 12", "created_at": "12/05/2025",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Mon Album 13", "created_at": "25/05/2025",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Mon Album 14", "created_at": "05/06/2025",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        },
+        {
+          "title": "Mon Album 15", "created_at": "18/06/2025",
+          "photos": [
+            {"url": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1463936575829-25148e1db1b8?w=800&h=450&fit=crop", "format": "landscape"},
+            {"url": "https://images.unsplash.com/photo-1545241047-6083a3684587?w=450&h=800&fit=crop", "format": "portrait"}
+          ]
+        }
+      ]
+    }
+  ]
+}

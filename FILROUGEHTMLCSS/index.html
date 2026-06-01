@@ -3,91 +3,437 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WORLD IS MINE -</title>
+    <title>WORLD IS MINE - WIM</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <header>
         <nav aria-label="navigation principale">
             <ul class="navigationPrincipale">
-                <li id="logoImage"><a class="NavBarLogo" href="./index.html"><img id="logo" src="./assets/pico-logo-wim/Logo.svg" alt="Logo"></a></li>
-                <li id="logotext"><a class="NavBarText" href="/index.html">WORLD IS MINE</a></li>
-                <li id="elAccueil"><a class="NavBar" href="/index.html">Accueil</a></li>
-                <li id="elCreer"><a class="NavBar" href="A definir">Créer</a></li>
-                <li id="elAlbum"><a class="NavBar" href="A definir">Album</a></li>
-                <li id="elExplorer"><a class="NavBar" href="A definir">Amis</a></li>
-                <li id="elAmis"><a class="NavBar" href="A definir">Explorer</a></li>
-                <li id="elCompte"><a class="NavBar" href="A definir">Compte</a></li>
-                <li id="logoBurger"><button id="NavBarBurger" class="burger" aria-label="Ouvrir le menu burger" aria-expanded="false"><img id="imageBurger" src="./assets/pico-logo-wim/burgerV1.svg" alt="Menu burger"></button></li>
-                <div id="underlineNav"></div>
+                <li id="logoImage"><a class="navBarLogo" href="./index.html"><img id="logo" src="./assets/pico-logo-wim/Logo.svg" alt="Logo"></a></li>
+                <li id="logoText"><a class="navBarText" href="/index.html">WORLD IS MINE</a></li>
+                <li id="elAccueil"><a class="navBar" href="/index.html">Accueil</a></li>
+                <li id="elCreer"><a class="navBar" href="A definir">Créer</a></li>
+                <li id="elAlbum"><a class="navBar" href="A definir">Albums</a></li>
+                <li id="elAmis"><a class="navBar" href="A definir">Amis</a></li>
+                <li id="elExplorer"><a class="navBar" href="A definir">Explorer</a></li>
+                <li id="elCompte"><a class="navBar" href="A definir">Compte</a></li>
+                <li id="logoBurger"><button class="navBarBurger" aria-label="Ouvrir le menu burger" aria-expanded="false"><img id="imageBurger" src="./assets/pico-logo-wim/burgerV1.svg" alt="Menu burger"></button></li>
             </ul>
         </nav>
         <nav aria-label="navigation burger">
             <ul class="navigationBurger">
                 <li id="elFermer"><img src="./assets/pico-logo-wim/croixLarge.svg" alt="Fermeture menu burger"></li>
-                <li id="elAccueilBurger"><a class="NavBurger" href="/index.html">Accueil</a></li>
-                <li id="elCreerBurger"><a class="NavBurger" href="A definir">Créer</a></li>
-                <li id="elAlbumBurger"><a class="NavBurger" href="A definir">Album</a></li>
-                <li id="elExplorerBurger"><a class="NavBurger" href="A definir">Amis</a></li>
-                <li id="elAmisBurger"><a class="NavBurger" href="A definir">Explorer</a></li>
-                <li id="elCompteBurger"><a class="NavBurger" href="A definir">Compte</a></li>
+                <li id="elAccueilBurger"><a class="navBurger" href="/index.html">Accueil</a></li>
+                <li id="elCreerBurger"><a class="navBurger" href="A definir">Créer</a></li>
+                <li id="elAlbumBurger"><a class="navBurger" href="A definir">Album</a></li>
+                <li id="elExplorerBurger"><a class="navBurger" href="A definir">Amis</a></li>
+                <li id="elAmisBurger"><a class="navBurger" href="A definir">Explorer</a></li>
+                <li id="elCompteBurger"><a class="navBurger" href="A definir">Compte</a></li>
             </ul>
         </nav>
     </header>
     <Main>
-        <nav aria-label="fil d'ariane">
+        <nav class="navAriane" aria-label="fil d'ariane">
             <ol class="ariane">
-                <li><a href="/">Accueil</a></li>
-                <li><a href="/album">Album</a></li>
-                <li aria-current="page">Photo</li>
+                <li><a id="pageActuelle" href="./index.html">Accueil</a></li>
+                <li><p>&nbsp;&#10095&nbsp;</p></li>
+                <!-- <li><a href="/">Créer</a></li>
+                <li><p>&nbsp;&#10095&nbsp;</p></li>
+                <li><a href="/">Albums</a></li>
+                <li><p>&nbsp;&#10095&nbsp;</p></li>
+                <li><a href="/">Amis</a></li>
+                <li><p>&nbsp;&#10095&nbsp;</p></li>
+                <li><a href="/">Explorer</a></li>
+                <li><p>&nbsp;&#10095&nbsp;</p></li>
+                <li><a href="/">Compte</a></li> -->
             </ol>
         </nav>
         <section class="titreAccueil">
             <h1>Bienvenue dans World Is Mine</h1>
             <p> Grâce à WIM, créez, stockez et partagez les albums photo de vos plus beaux moments.</p>
+            <p>Commencez par créer un album ou exploré ce de la communauté.</p>
+            <span class="boutonAccueil"><a href="A definir" aria-label="Créer un Album">Créer</a><a href="A definir" aria-label="Explorer les albums">Explorer</a></span>
         </section>
-        <section class="bouton">
-            <span><a href="A definir" aria-label="Créer un Album">Créer</a><a href="A definir" aria-label="Explorer les albums">Explorer</a></span>
-        </section>
-        <section class="chapitre">
-            <div class="chapitreFond">
-                <div class="chapitreTitre">
+        <section class="laUne">
+            <div class="laUneFond fond fondBlanc">
+                <div class="laUneTitre titreSection">
                     <h2>Albums à la une</h2>
-                    <a class="titreVisite" href="Tout visiter">Tout voir</a>
+                    <a class="titreVoirPlus" href="Tout visiter">Tout voir</a>
                 </div>                
-                    <span class="aLaUneMembre">
-                        <img class="avatarUtilisateur" src="./assets/fakeAlbum/fakeMembre/Mathilde.jpg" alt="photoProfilUtilisateur">
-                        <p class="nomUtilisateur">Mathilde</p>
-                        <p class="nomAlbum">Merci pour le Kdo !!</p>
-                        <!-- <p class="dateAlbum">16/03/26</p> -->
-                    </span>
-                    <div id="photoUne">
-                        <button id="boutonGauche"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M169.4 297.4C156.9 309.9 156.9 330.2 169.4 342.7L361.4 534.7C373.9 547.2 394.2 547.2 406.7 534.7C419.2 522.2 419.2 501.9 406.7 489.4L237.3 320L406.6 150.6C419.1 138.1 419.1 117.8 406.6 105.3C394.1 92.8 373.8 92.8 361.3 105.3L169.3 297.3z"/></svg></button>
-                        <a href="aDefinir"><img class="albumUtilisateur" src="assets/fakeAlbum/fakePhoto/108054341-1730220231125-gettyimages.jpg" alt="photoAlbum"></a>
-                        <button id="boutonDroit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z"/></svg></button>
+                <div class="laUneUtilisateurUne">
+                    <a href="A definir"><img class="avatarUtilisateurUne" src=""></a>
+                    <p class="nomUtilisateurUne"></p>
+                    <p class="titreAlbumUne"></p>
+                </div>
+                <div class="carousel">
+                    <button class="boutonGaucheUne boutonGauche"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M169.4 297.4C156.9 309.9 156.9 330.2 169.4 342.7L361.4 534.7C373.9 547.2 394.2 547.2 406.7 534.7C419.2 522.2 419.2 501.9 406.7 489.4L237.3 320L406.6 150.6C419.1 138.1 419.1 117.8 406.6 105.3C394.1 92.8 373.8 92.8 361.3 105.3L169.3 297.3z"/></svg></button>
+                    <div class="carouselFenetreUne">
+                        <div class="carouselPisteUne">
+                            <a class="carouselSlideUne" href="A définir">
+                                <img class="imgPrincipale" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=450&fit=crop">
+                                <img class="imgSecondaire" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=450&fit=crop">
+                            </a>
+                            <a class="carouselSlideUne" href="A définir">
+                                <img class="imgPrincipale" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=450&fit=crop" alt="Photo 2">
+                                <img class="imgSecondaire" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=450&fit=crop" alt="Photo 2">
+                            </a>
+                            <a class="carouselSlideUne" href="A définir">
+                                <img class="imgPrincipale" src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=450&h=800&fit=crop" alt="Photo 3">
+                                <img class="imgSecondaire" src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=450&h=800&fit=crop" alt="Photo 3">
+                            </a>
+                        </div>
                     </div>
+                    <button class="boutonDroitUne boutonDroit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z"/></svg></button>
+                </div>
+                <div class="carouselPoints">
+                    <span class="point actif"></span>
+                    <span class="point"></span>
+                    <span class="point"></span>
+                </div>
             </div>              
         </section>
-<!-- le carroussel https://codemalin.fr/articles/creer-un-carrousel-en-javascript.html -->
-        <section class="leCarousel">
-            <div class="carousel" aria-labelledby="carouselheading">
-                <button class="btn" id="prev">&#10096;</button>
-                <div class="carousel-track-container">
-                    <ul class="carousel-track">
-                        <li class="slide"><img src="./assets/fakeAlbum/fakePhoto/OIP-16893933.jpg" alt="Image 1"></li>
-                        <li class="slide"><img src="./assets/fakeAlbum/fakePhoto/866-536x354.jpg" alt="Image 2"></li>
-                        <li class="-slide"><img src="./assets/fakeAlbum/fakePhoto/beauty-woman-face-with-perfect-skin.jpg" alt="Image 3"></li>
-                    </ul>
+        <section class="mesAlbums">
+            <div class="mesAlbumsFond fond">
+                <div class="mesAlbumsTitre titreSection">
+                    <h2>Mes Albums</h2>
+                    <a class="titreVoirPlus" href="Tout visiter">Tout voir</a>
                 </div>
-                <button class="btn" id="next">&#10097;</button>
+                <div class="mesAlbumBoite">
+                    <a class="tuileAlbum monAlbum1" href="A defini">
+                        <img class="imageTuile" src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&h=450&fit=crop" alt="Photo Album">
+                        <div class="textP">
+                            <p class="titreAlbum">Irland</p>
+                        </div>
+                    </a>
+                    <a class="tuileAlbum monAlbum2" href="A defini">
+                        <img class="imageTuile" src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=450&fit=crop" alt="Photo Album">
+                        <div class="textP">
+                            <p class="titreAlbum">Zen</p>
+                        </div>
+                    </a>
+                    <a class="tuileAlbum monAlbum3" href="A defini">
+                        <img class="imageTuile" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800&h=450&fit=crop" alt="Photo Album">
+                        <div class="textP">
+                            <p class="titreAlbum">Route 66</p>
+                        </div>
+                    </a>
+                    <a class="tuileAlbum monAlbum4" href="A defini">
+                        <img class="imageTuile" src="https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?w=800&h=450&fit=crop" alt="Photo Album">
+                        <div class="textP">
+                            <p class="titreAlbum">J'ai hâte</p>
+                        </div>
+                    </a>
+                    <a class="tuileAlbum monAlbum5" href="A defini">
+                        <img class="imageTuile" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=450&h=800&fit=crop" alt="Photo Album">
+                        <div class="textP">
+                            <p class="titreAlbum">test texte dpasse avec beaucoup de mot</p>
+                        </div>
+                    </a>
+                    <a class="tuileAlbum monAlbum6" href="A defini">
+                        <img class="imageTuile" src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?w=800&h=450&fit=crop" alt="Photo Album">
+                        <div class="textP">
+                            <p class="titreAlbum">Retour au source</p>
+                        </div>
+                    </a>
+                    <a class="tuileAlbum monAlbum7" href="A defini">
+                        <img class="imageTuile" src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&h=450&fit=crop" alt="Photo Album">
+                        <div class="textP">
+                            <p class="titreAlbum">Camping</p>
+                        </div>
+                    </a>
+                    <a class="tuileAlbum monAlbum8" href="A defini">
+                        <img class="imageTuile" src="https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=800&h=450&fit=crop" alt="Photo Album">
+                        <div class="textP">
+                            <p class="titreAlbum">Le plus beau</p>
+                        </div>
+                    </a>
+                    <a class="tuileAlbum monAlbum9" href="A defini">
+                        <img class="imageTuile" src="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?w=800&h=450&fit=crop" alt="Photo Album">
+                        <div class="textP">
+                            <p class="titreAlbum">Rex</p>
+                        </div>
+                    </a>
+                    <a class="tuileAlbum monAlbum10" href="A defini">
+                        <img class="imageTuile" src="https://images.unsplash.com/photo-1507133750040-4a8f57021571?w=450&h=800&fit=crop" alt="Photo Album">
+                        <div class="textP">
+                            <p class="titreAlbum">Café</p>
+                        </div>
+                    </a>                    
+                </div>
             </div>
         </section>
         <section>
-            <h2>fezfzefz</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic esse dolorum rerum nisi. Dolore animi nisi harum quasi obcaecati, perferendis, magni quaerat deserunt iure rerum necessitatibus eligendi, aperiam perspiciatis ducimus fuga accusamus! Quod, totam. Voluptatum tempora commodi repellendus atque quidem laudantium quia pariatur cumque? Doloremque est officiis doloribus ipsam blanditiis porro numquam? Nesciunt, nam fugiat vero est libero labore ab veritatis optio dolore ad quasi in amet sint natus laudantium recusandae minima laboriosam sunt eos laborum ex iure? Sit error eaque delectus praesentium natus eos sint consectetur molestiae ab alias? In alias maxime, quidem ut accusantium incidunt! Dolore libero ducimus ea autem. Quod recusandae eos illo delectus commodi earum quasi dolorum nihil dolore, impedit distinctio. Maiores quidem dicta nemo cum velit optio accusamus quasi porro rem hic, maxime impedit quibusdam cumque voluptates est modi voluptatibus totam sint consectetur cupiditate ipsa blanditiis eaque. Magni harum neque porro illo velit cupiditate accusamus molestiae, debitis aliquam, facilis ducimus aspernatur, non obcaecati deleniti eum officiis vero saepe reiciendis earum rerum accusantium laborum qui veritatis. Necessitatibus, ullam? Quo provident, eligendi cum velit maxime animi reiciendis autem delectus fuga labore. Libero ad doloribus omnis nisi alias, asperiores voluptatum amet dolorum dignissimos rerum architecto quia repellat ex voluptatem nostrum sunt quidem nobis tenetur vero! Odio, culpa. Illum exercitationem nobis optio assumenda sint dolores adipisci quasi voluptates itaque ad ipsam nihil eaque, architecto alias iste, repellat quis recusandae asperiores voluptatum consectetur mollitia amet unde laudantium! Deserunt maxime voluptatem fuga aut repudiandae dolore et veniam cum, voluptate, ex minima quae. Eligendi, assumenda? At inventore neque et iusto suscipit sunt quibusdam impedit consequatur necessitatibus libero minus eos, quidem culpa sed excepturi animi magnam veritatis adipisci harum quam deleniti hic. Vero ipsam quod facere eum! Obcaecati, ad. Culpa iste consectetur laborum voluptatibus alias quod obcaecati hic aliquam, natus debitis! Quos voluptatibus officiis ipsa, quisquam, tempore omnis, quas autem blanditiis corporis similique sunt doloremque sapiente quasi labore itaque totam molestias repudiandae magni quia est adipisci laborum dolorum? Praesentium alias similique deserunt omnis quisquam sint laborum fuga. Iure laudantium nemo impedit! Facere beatae consequuntur, velit numquam eaque cum tempore corrupti rerum eum nisi. Accusamus voluptas officia amet architecto ex, necessitatibus aliquam voluptates veniam id corrupti vel sapiente error dolores in doloribus tempore, distinctio quaerat eaque aperiam laboriosam eveniet explicabo? Deleniti cupiditate molestias, sit blanditiis minima, velit modi harum quo fuga aliquam nulla dolores dicta dignissimos. Pariatur assumenda corporis nam perspiciatis beatae ut facere quibusdam maiores unde, hic dolorum excepturi eius eaque blanditiis ad! Ea iure cumque, voluptate assumenda, repudiandae explicabo mollitia itaque nam reiciendis eius, enim quibusdam pariatur deserunt aut ipsum unde consequatur expedita molestias delectus iste officiis corporis quae perferendis laboriosam. Repellendus magni, labore quae molestias doloremque dolorem? Quasi magnam, dignissimos reprehenderit velit nesciunt quia esse. Aut expedita laborum dolorem odit sunt aliquid molestiae quia quae quam harum soluta quaerat ex quibusdam quas, quisquam ipsa in alias nesciunt mollitia quasi ipsum nihil? Repudiandae ducimus libero exercitationem, quae obcaecati vero perspiciatis tempore deserunt id, porro suscipit perferendis? Sequi a incidunt laborum est dolorem inventore ducimus, rerum numquam vel dolores. Est vitae, placeat nostrum temporibus molestias consequatur eius nemo sunt incidunt dolore nam eligendi dolores reprehenderit fugiat aut at! Inventore recusandae enim porro iusto. Facilis illo reiciendis veniam modi nemo eligendi possimus ipsum recusandae dolorem. Pariatur earum hic tempore aliquam accusantium, laudantium repudiandae cupiditate ipsum consequuntur dolorem id numquam quisquam nam quia! Inventore rerum quae reprehenderit impedit animi minus tempore corporis ut eligendi dicta obcaecati magnam modi quos sapiente, iste veniam distinctio ipsum neque quas quisquam deserunt? Voluptate natus voluptas labore dolor rerum accusamus maiores, ad ut suscipit earum fugit quam doloribus quas fugiat vel molestiae sed et, sint laudantium ipsum explicabo. Earum voluptate fuga nostrum excepturi laborum sequi odio molestias dicta veritatis fugiat! Voluptas atque dolorem magni cum animi consequatur, quisquam vitae qui nesciunt optio aut ipsa asperiores, amet, doloribus natus autem! Libero ex, doloribus iusto provident dolorum sunt non enim nisi. Ullam deleniti quos nisi porro vero ipsam quasi consequatur perferendis magni iste dicta, officiis repudiandae veniam. Reiciendis nesciunt eveniet voluptatum architecto ex eum consequuntur? Cupiditate mollitia placeat fugiat ad perferendis blanditiis, sed recusandae voluptas accusamus modi, corrupti facere libero maxime. Deserunt cumque odio debitis provident beatae quod quo necessitatibus veritatis nam veniam rem in eius voluptatibus ex nemo natus tempore atque harum, nihil possimus optio. Esse eligendi nostrum qui quisquam ullam eaque suscipit aut iure, ratione veniam nihil dicta optio autem possimus sint ut dolores natus doloremque voluptates accusantium facilis quia quod? Rerum delectus minima impedit, reiciendis inventore architecto? Nam ad, velit magni vero, accusamus possimus qui sed autem sint ducimus vitae veniam rem perspiciatis, suscipit quos perferendis non odio doloribus. Culpa modi quia animi nemo veniam? Ex illo optio unde cupiditate? Velit ut laborum a consequatur ducimus porro quod maxime vero, laudantium consectetur voluptatibus sit! Molestiae quis quo, aspernatur quia aperiam praesentium adipisci sapiente est recusandae corrupti! Fugit saepe maiores amet harum laborum odio nisi ullam dignissimos velit, possimus dicta quo praesentium explicabo aperiam cumque vel quos nostrum veritatis repellat. Quas facere doloribus eius voluptas. Nihil quos eum ad id sequi, laboriosam, atque aut architecto nostrum molestias et ab vitae accusantium laborum rem excepturi ipsum doloribus quidem vero. Aspernatur pariatur reprehenderit nobis voluptatum eveniet. Mollitia incidunt ex aut, harum ea nobis temporibus natus ut, exercitationem quas quasi aperiam beatae velit eveniet veritatis cum maxime ipsum nostrum doloremque ratione sed. Temporibus quaerat distinctio sint quae corrupti cum autem mollitia dolores omnis, porro aperiam iure repudiandae nemo dolorem nulla minus explicabo? Ipsa, reiciendis. Repellendus quod ratione debitis fugiat autem laborum, voluptatibus quaerat eum. Saepe inventore alias, iusto quas velit ea vitae a excepturi. Deleniti, doloremque. Tenetur ipsa a unde nam maxime, cupiditate architecto ratione nulla. Doloremque, fugit aut ex quos architecto modi perspiciatis earum quisquam et officiis consectetur nisi nam unde exercitationem porro? Sint assumenda voluptatum quae veritatis, sunt sit suscipit animi atque ex laudantium facilis commodi ipsam dolore modi totam magnam quod nihil aliquid porro doloremque molestias. Voluptate sit quia incidunt? Velit harum cumque suscipit eaque voluptatum praesentium. Quas architecto beatae cum quis id incidunt nobis. Quo itaque nihil aspernatur voluptatum obcaecati, neque tempore, suscipit totam sint harum enim quia eveniet corrupti dignissimos alias dolorem, at nulla dolorum porro adipisci deserunt! Inventore soluta vel praesentium omnis laborum, molestias vitae suscipit culpa repellat atque, voluptates, incidunt eos. Est, explicabo, excepturi adipisci delectus quos officiis vel consequuntur ad porro laboriosam hic eaque esse neque natus perspiciatis atque tempora quidem. Aliquam excepturi recusandae ducimus labore minus consectetur amet officiis, porro culpa necessitatibus voluptatum ipsam ut illo deleniti rerum placeat ab adipisci. Cumque amet commodi consequatur ad assumenda, ipsa nesciunt alias? Necessitatibus culpa dolorem voluptatem eaque laudantium aut rerum hic ut suscipit laborum possimus accusamus sequi quia laboriosam inventore ipsum beatae consequuntur sunt, autem expedita nostrum aperiam omnis fugit facilis. Laudantium corrupti necessitatibus quasi iusto ad odio exercitationem optio doloribus alias deserunt! Et pariatur voluptates suscipit quaerat tempore? Neque libero, provident voluptate repudiandae sequi, eum debitis eveniet fugiat nam hic qui laborum minus. Molestiae necessitatibus soluta cupiditate officiis enim eos recusandae tempora iste tempore dolor sint, ex non, voluptas dignissimos fugit quod temporibus harum. Magnam distinctio, cum id maxime dolores quisquam quasi at placeat. Aperiam asperiores id consectetur ex animi eum repudiandae aut incidunt provident, suscipit facere unde iusto veritatis debitis! Officia veniam deleniti soluta at tenetur quae dignissimos assumenda, quasi similique incidunt. Vitae magnam incidunt fuga maiores. Facere maiores fugit, quasi eligendi voluptate impedit odio ipsam unde necessitatibus facilis at. Fuga rerum maxime hic minima nulla! Provident magnam corrupti maiores quod perspiciatis voluptates eius cum tenetur temporibus sint voluptatibus, exercitationem consequatur, nostrum similique aut? Quasi quos similique odit doloremque ipsum eius beatae voluptatibus hic quas nostrum itaque odio, fugiat rerum libero consectetur, minus tenetur magni soluta amet! At minima sapiente officiis excepturi pariatur, totam sint ab quas doloremque, libero porro ut quaerat maiores veritatis esse iste similique mollitia tenetur molestiae dolore ipsa dolorem debitis. Quisquam recusandae quidem cum, provident eum excepturi repellat harum autem laborum iste ut nobis. Facere nihil porro rerum eos omnis at illum laborum officiis, consectetur facilis eum adipisci recusandae earum architecto aut iusto a aspernatur iste molestiae culpa aliquam distinctio eveniet illo. Consequuntur eos error laboriosam doloremque, mollitia, quisquam dolorum quibusdam inventore enim nisi quis blanditiis saepe est tenetur nemo eaque soluta. Perspiciatis itaque excepturi expedita, blanditiis facere eius. Quo facilis culpa natus quasi doloremque quaerat aliquid ad, quis impedit eos rerum qui deleniti? Obcaecati maxime numquam, itaque inventore quis dolorum animi odit fugit exercitationem aliquam, mollitia fuga? Cum, ducimus perspiciatis iure qui laborum minus dolor, nihil ipsa accusantium similique totam repellat modi ullam deserunt dignissimos at ea, vitae animi! Et nulla facilis debitis reiciendis aspernatur. Incidunt, aperiam? Assumenda asperiores quae suscipit dicta accusamus corporis, ullam delectus, est error unde iste non consequatur rerum sit soluta ea qui voluptatum esse. Eligendi nostrum quod et quibusdam minima dignissimos itaque est sapiente ullam, ad deleniti error! Magni, molestiae nulla doloribus vero doloremque voluptas natus ea! Architecto temporibus corrupti tempore doloribus doloremque commodi cum repellat? Quo totam molestiae praesentium qui temporibus expedita assumenda!</p>
+            <div class="recherche">
+                <input class="elRecherche" type="text" placeholder="Rechercher, album, utilisateur ..." />
+                <button class="btnRecherche" aria-label="Rechercher"><img src="./assets/pico-logo-wim/loupe.svg" alt=""></button>
+            </div>
+        </section>
+        <section class="amisAlbums">
+            <div class="amisAlbumsFond fond fondBlanc">
+                <div class="amisAlbumsTitre titreSection">
+                        <h2>Les albums de mes amis</h2>
+                        <a class="titreVoirPlus" href="Tout visiter">Tout voir</a>
+                </div>
+                <div class="carousel">
+                    <button class="boutonGaucheArticle boutonGauche boutonGaucheAmis"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M169.4 297.4C156.9 309.9 156.9 330.2 169.4 342.7L361.4 534.7C373.9 547.2 394.2 547.2 406.7 534.7C419.2 522.2 419.2 501.9 406.7 489.4L237.3 320L406.6 150.6C419.1 138.1 419.1 117.8 406.6 105.3C394.1 92.8 373.8 92.8 361.3 105.3L169.3 297.3z"/></svg></button>
+                    <div class="carouselFenetreArticle carouselFenetreAmis">
+                        <div class="carouselPisteArticle carouselPisteAmis">
+                            <div class="carouselSlideArticle carouselSlideAmis">
+                                <div class="albumBoite">
+                                    <a class="tuileAlbum slideAlbum1" href="A defini">
+                                        <div class="avatarUtilisateur">
+                                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=300&h=300&fit=crop" alt="Avatar utilisateur">
+                                        </div>
+                                        <img class="imageTuile" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&h=450&fit=crop" alt="Photo Album">
+                                        <div class="textP">
+                                            <p class="titreAlbum">Randonnée en montagne</p>
+                                        </div>
+                                    </a>
+                                    <a class="tuileAlbum slideAlbum2" href="A defini">
+                                        <div class="avatarUtilisateur">
+                                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop" alt="Avatar utilisateur">
+                                        </div>
+                                        <img class="imageTuile" src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=800&h=450&fit=crop" alt="Photo Album">
+                                        <div class="textP">
+                                            <p class="titreAlbum">Mon Chat</p>
+                                        </div>
+                                    </a>
+                                    <a class="tuileAlbum slideAlbum3" href="A defini">
+                                        <div class="avatarUtilisateur">
+                                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop" alt="Avatar utilisateur">
+                                        </div>
+                                        <img class="imageTuile" src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?w=800&h=450&fit=crop" alt="Photo Album">
+                                        <div class="textP">
+                                            <p class="titreAlbum">Roadtrip Moto</p>
+                                        </div>
+                                    </a>
+                                    <a class="tuileAlbum slideAlbum4" href="A defini">
+                                        <div class="avatarUtilisateur">
+                                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop" alt="Avatar utilisateur">
+                                        </div>
+                                        <img class="imageTuile" src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&h=450&fit=crop" alt="Photo Album">
+                                        <div class="textP">
+                                            <p class="titreAlbum">Aquarelle et Dessin</p>
+                                        </div>
+                                    </a>
+                                    <a class="tuileAlbum slideAlbum5" href="A defini">
+                                        <div class="avatarUtilisateur">
+                                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop" alt="Avatar utilisateur">
+                                        </div>
+                                        <img class="imageTuile" src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=450&h=800&fit=crop" alt="Photo Album">
+                                        <div class="textP">
+                                            <p class="titreAlbum">Street Art</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carouselSlideArticle carouselSlideAmis">
+                                <div class="albumBoite">
+                                    <a class="tuileAlbum slideAlbum1" href="A defini">
+                                        <div class="avatarUtilisateur">
+                                            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=300&h=300&fit=crop" alt="Avatar utilisateur">
+                                        </div>
+                                        <img class="imageTuile" src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=800&h=450&fit=crop" alt="Photo Album">
+                                        <div class="textP">
+                                            <p class="titreAlbum">Mon Chien</p>
+                                        </div>
+                                    </a>
+                                    <a class="tuileAlbum slideAlbum2" href="A defini">
+                                        <div class="avatarUtilisateur">
+                                            <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=300&h=300&fit=crop" alt="Avatar utilisateur">
+                                        </div>
+                                        <img class="imageTuile" src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&h=450&fit=crop" alt="Photo Album">
+                                        <div class="textP">
+                                            <p class="titreAlbum">Setup Gaming</p>
+                                        </div>
+                                    </a>
+                                    <a class="tuileAlbum slideAlbum3" href="A defini">
+                                        <div class="avatarUtilisateur">
+                                            <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=300&h=300&fit=crop" alt="Avatar utilisateur">
+                                        </div>
+                                        <img class="imageTuile" src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=800&h=450&fit=crop" alt="Photo Album">
+                                        <div class="textP">
+                                            <p class="titreAlbum">Plantes d'intérieur</p>
+                                        </div>
+                                    </a>
+                                    <a class="tuileAlbum slideAlbum4" href="A defini">
+                                        <div class="avatarUtilisateur">
+                                            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&h=300&fit=crop" alt="Avatar utilisateur">
+                                        </div>
+                                        <img class="imageTuile" src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&h=450&fit=crop" alt="Photo Album">
+                                        <div class="textP">
+                                            <p class="titreAlbum">Rénovation Voiture</p>
+                                        </div>
+                                    </a>
+                                    <a class="tuileAlbum slideAlbum5" href="A defini">
+                                        <div class="avatarUtilisateur">
+                                            <img src="https://images.unsplash.com/photo-1491349174775-aaafddd81942?w=300&h=300&fit=crop" alt="Avatar utilisateur">
+                                        </div>
+                                        <img class="imageTuile" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=450&h=800&fit=crop" alt="Photo Album">
+                                        <div class="textP">
+                                            <p class="titreAlbum">Macarons Maison</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="boutonDroitArticle boutonDroit boutonDroitAmis"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z"/></svg></button>
+                </div>
+            </div>
+        </section>
+        <section class="commuAlbums">
+            <div class="commuAlbumsFond fond fondBlanc">
+                <div class="commuAlbumsTitre titreSection">
+                        <h2>Inspiré par la communauté</h2>
+                        <a class="titreVoirPlus" href="Tout visiter">Tout voir</a>
+                </div>
+                <div class="carousel">
+                    <button class="boutonGaucheArticle boutonGauche boutonGaucheCommu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M169.4 297.4C156.9 309.9 156.9 330.2 169.4 342.7L361.4 534.7C373.9 547.2 394.2 547.2 406.7 534.7C419.2 522.2 419.2 501.9 406.7 489.4L237.3 320L406.6 150.6C419.1 138.1 419.1 117.8 406.6 105.3C394.1 92.8 373.8 92.8 361.3 105.3L169.3 297.3z"/></svg></button>
+                    <div class="carouselFenetreArticle carouselFenetreCommu">
+                        <div class="carouselPisteArticle carouselPisteCommu">
+                            <div class="carouselSlideArticle carouselSlideCommu">
+                                <div class="albumBoite">
+                                    <a class="tuileAlbum slideAlbum1" href="A defini">
+                                        <div class="avatarUtilisateur">
+                                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop" alt="Avatar utilisateur">
+                                        </div>
+                                        <img class="imageTuile" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=450&fit=crop" alt="Photo Album">
+                                        <div class="textP">
+                                            <p class="titreAlbum">Architecture</p>
+                                        </div>
+                                    </a>
+                                    <a class="tuileAlbum slideAlbum2" href="A defini">
+                                        <div class="avatarUtilisateur">
+                                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&h=300&fit=crop" alt="Avatar utilisateur">
+                                        </div>
+                                        <img class="imageTuile" src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=800&h=450&fit=crop" alt="Photo Album">
+                                        <div class="textP">
+                                            <p class="titreAlbum">Photos Floues</p>
+                                        </div>
+                                    </a>
+                                    <a class="tuileAlbum slideAlbum3" href="A defini">
+                                        <div class="avatarUtilisateur">
+                                            <img src="https://images.unsplash.com/photo-1521119989659-a83eee488004?w=300&h=300&fit=crop" alt="Avatar utilisateur">
+                                        </div>
+                                        <img class="imageTuile" src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=800&h=450&fit=crop" alt="Photo Album">
+                                        <div class="textP">
+                                            <p class="titreAlbum">Musculation</p>
+                                        </div>
+                                    </a>
+                                    <a class="tuileAlbum slideAlbum4" href="A defini">
+                                        <div class="avatarUtilisateur">
+                                            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=300&h=300&fit=crop" alt="Avatar utilisateur">
+                                        </div>
+                                        <img class="imageTuile" src="https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?w=800&h=450&fit=crop" alt="Photo Album">
+                                        <div class="textP">
+                                            <p class="titreAlbum">Astrologie</p>
+                                        </div>
+                                    </a>
+                                    <a class="tuileAlbum slideAlbum5" href="A defini">
+                                        <div class="avatarUtilisateur">
+                                            <img src="https://images.unsplash.com/photo-1504257404764-52525a411123?w=300&h=300&fit=crop" alt="Avatar utilisateur">
+                                        </div>
+                                        <img class="imageTuile" src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=800&h=450&fit=crop" alt="Photo Album">
+                                        <div class="textP">
+                                            <p class="titreAlbum">Drone Nature</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carouselSlideArticle carouselSlideCommu">
+                                <div class="albumBoite">
+                                    <a class="tuileAlbum slideAlbum1" href="A defini">
+                                        <div class="avatarUtilisateur">
+                                            <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?w=300&h=300&fit=crop" alt="Avatar utilisateur">
+                                        </div>
+                                        <img class="imageTuile" src="https://images.unsplash.com/photo-1584992231908-a90240d66572?w=800&h=450&fit=crop" alt="Photo Album">
+                                        <div class="textP">
+                                            <p class="titreAlbum">Tricot</p>
+                                        </div>
+                                    </a>
+                                    <a class="tuileAlbum slideAlbum2" href="A defini">
+                                        <div class="avatarUtilisateur">
+                                            <img src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?w=300&h=300&fit=crop" alt="Avatar utilisateur">
+                                        </div>
+                                        <img class="imageTuile" src="https://images.unsplash.com/photo-1601987177651-8edfe6c20009?w=800&h=450&fit=crop" alt="Photo Album">
+                                        <div class="textP">
+                                            <p class="titreAlbum">Jeux de Cartes</p>
+                                        </div>
+                                    </a>
+                                    <a class="tuileAlbum slideAlbum3" href="A defini">
+                                        <div class="avatarUtilisateur">
+                                            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=300&h=300&fit=crop" alt="Avatar utilisateur">
+                                        </div>
+                                        <img class="imageTuile" src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=800&h=450&fit=crop" alt="Photo Album">
+                                        <div class="textP">
+                                            <p class="titreAlbum">Couture Moderne</p>
+                                        </div>
+                                    </a>
+                                    <a class="tuileAlbum slideAlbum4" href="A defini">
+                                        <div class="avatarUtilisateur">
+                                            <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=300&h=300&fit=crop" alt="Avatar utilisateur">
+                                        </div>
+                                        <img class="imageTuile" src="https://images.unsplash.com/photo-1507156431300-48027743358c?w=800&h=450&fit=crop" alt="Photo Album">
+                                        <div class="textP">
+                                            <p class="titreAlbum">Bmx tricks</p>
+                                        </div>
+                                    </a>
+                                    <a class="tuileAlbum slideAlbum5" href="A defini">
+                                        <div class="avatarUtilisateur">
+                                            <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=300&h=300&fit=crop" alt="Avatar utilisateur">
+                                        </div>
+                                        <img class="imageTuile" src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=450&h=800&fit=crop" alt="Photo Album">
+                                        <div class="textP">
+                                            <p class="titreAlbum">Desserts Licorne</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="boutonDroitArticle boutonDroit boutonDroitCommu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M471.1 297.4C483.6 309.9 483.6 330.2 471.1 342.7L279.1 534.7C266.6 547.2 246.3 547.2 233.8 534.7C221.3 522.2 221.3 501.9 233.8 489.4L403.2 320L233.9 150.6C221.4 138.1 221.4 117.8 233.9 105.3C246.4 92.8 266.7 92.8 279.2 105.3L471.2 297.3z"/></svg></button>
+                </div>
+            </div>
         </section>
     </Main>
+    <button class="btnUp"><img src="./assets/pico-logo-wim/flecheHaut.svg" alt="Retour haut de page"></button>
     <footer>
+        <div class="planDuSite">
+            <h3>Plan du site</h3>
+            <nav aria-label="Plan du site">
+                <ul class="planDuSiteFooter">
+                    <li><a class="footerBar" href="/index.html">Accueil</a></li>
+                    <li><a class="footerBar" href="A definir">Créer</a></li>
+                    <li><a class="footerBar" href="A definir">Albums</a></li>
+                    <li><a class="footerBar" href="A definir">Amis</a></li>
+                    <li><a class="footerBar" href="A definir">Explorer</a></li>
+                    <li><a class="footerBar" href="A definir">Compte</a></li>
+                </ul>
+        </nav>
+        </div>
+        <div class="reseauCopyright">
+            <div class="reseau">
+                <a href="A definir"><img src="./assets/pico-logo-wim/X.svg" alt="logo X"></img></a>
+                <a href="A definir"><img src="./assets/pico-logo-wim/facebook.svg" alt="logo Facebook"></img></a>
+                <a href="A definir"><img src="./assets/pico-logo-wim/instagram.svg" alt="logo Instagram"></img></a>
+            </div>
+            <div class="copyright">
+                <p>Version 0.0.0</p>
+                <p>Copyright 2026 World Is Mine</p>
+            </div>
+        </div>
+        <div class="contactCGU">
+            <nav aria-label="navigation Nous contacter Mention légales CGU RGPD">
+                <ul class="contactCGUFooter">
+                    <li><a class="footerBar" href="/index.html">Nous contacter</a></li>
+                    <li><a class="footerBar" href="A definir">Mention légales</a></li>
+                    <li><a class="footerBar" href="A definir">CGU</a></li>
+                    <li><a class="footerBar" href="A definir">RGPD</a></li>
+                </ul>
+        </nav>
+        </div>
     </footer>
 </body>
     <script src="./main.js"></script>
